@@ -9,11 +9,13 @@ my $build = Module::Build->new(
         'Catalyst::Authentication::User'   => 0,
         'XML::LibXML' => '0',
         'Moose' => '0',
-        'Path::Class' => '0',
+        'Path::Class' => '0.26',   # spew()
         'Authen::Passphrase' => '0',
+        'Authen::Passphrase::BlowfishCrypt' => 0,
     },
     build_requires => {
         'Test::More'        => 0,
+        'Test::Differences' => 0,
         'File::Temp'        => 0,
         'Path::Class'       => 0.26,
     },

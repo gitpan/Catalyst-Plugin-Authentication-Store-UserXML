@@ -5,11 +5,12 @@ author:
 build_requires:
   File::Temp: 0
   Path::Class: 0.26
+  Test::Differences: 0
   Test::More: 0
 configure_requires:
   Module::Build: 0
 dynamic_config: 1
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112621'
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.110440'
 keywords:
   - catalyst
   - store
@@ -23,22 +24,23 @@ name: Catalyst-Plugin-Authentication-Store-UserXML
 provides:
   Catalyst::Plugin::Authentication::Store::UserXML:
     file: lib/Catalyst/Plugin/Authentication/Store/UserXML.pm
-    version: 0.01
+    version: 0.02
   Catalyst::Plugin::Authentication::Store::UserXML::Folder:
     file: lib/Catalyst/Plugin/Authentication/Store/UserXML/Folder.pm
-    version: 0
+    version: 0.02
   Catalyst::Plugin::Authentication::Store::UserXML::User:
     file: lib/Catalyst/Plugin/Authentication/Store/UserXML/User.pm
-    version: 0
+    version: 0.02
 requires:
   Authen::Passphrase: 0
+  Authen::Passphrase::BlowfishCrypt: 0
   Catalyst::Authentication::User: 0
   Catalyst::Plugin::Authentication: 0
   Moose: 0
-  Path::Class: 0
+  Path::Class: 0.26
   XML::LibXML: 0
 resources:
   bugtracker: http://github.com/jozef/Catalyst-Plugin-Authentication-Store-UserXML/issues
   license: http://dev.perl.org/licenses/
   repository: http://github.com/jozef/Catalyst-Plugin-Authentication-Store-UserXML
-version: 0.01
+version: 0.02
